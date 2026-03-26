@@ -1,4 +1,5 @@
 ```zsh
+sudo systemctl status mysql
 ```
 ```zsh
 ```
