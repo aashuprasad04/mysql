@@ -15,7 +15,7 @@ sudo mysql
 ```zsh
 mysql -u root -p
 ```
-```zsh
+```mysql
 SHOW DATABASES;
 ```
 ```zsh
