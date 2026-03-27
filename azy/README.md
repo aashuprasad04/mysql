@@ -5,6 +5,7 @@ sudo systemctl status mysql
 sudo systemctl start mysql
 ```
 ```zsh
+sudo systemctl stop mysql 
 ```
 ```zsh
 ```
