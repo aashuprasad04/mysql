@@ -7,11 +7,11 @@ sudo systemctl start mysql
 ```zsh
 sudo systemctl stop mysql 
 ```
-#### Login Database
+1. Login Database
 ```zsh
 sudo mysql
 ```
-#### Login Database using pass
+2. Login Database using pass
 ```zsh
 mysql -u root -p
 ```
