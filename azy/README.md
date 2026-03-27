@@ -35,7 +35,7 @@ mysql -u root -p
 2. ```mysql
     CREATE DATABASE mydb;
    ```
-   ```txt
+   ```mysql
     MariaDB [(none)]> CREATE DATABASE mydb;
     Query OK, 1 row affected (0.007 sec)
     
