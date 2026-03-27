@@ -20,7 +20,7 @@ mysql -u root -p
 1. ```mysql
     SHOW DATABASES;
    ```
-- ```txt
+   ```txt
     MariaDB [(none)]> show databases;
     +--------------------+
     | Database           |
@@ -31,7 +31,7 @@ mysql -u root -p
     | sys                |
     +--------------------+
     4 rows in set (0.007 sec)
-  ```
+```
 
 ```zsh
 ```
