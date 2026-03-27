@@ -20,19 +20,18 @@ mysql -u root -p
 ```mysql
 SHOW DATABASES;
 ```
-```txt
-MariaDB [(none)]> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-+--------------------+
-4 rows in set (0.007 sec)
-
-```
+    ```txt
+    MariaDB [(none)]> show databases;
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    +--------------------+
+    4 rows in set (0.007 sec)
+    ```
 
 ```zsh
 ```
