@@ -31,7 +31,7 @@ mysql -u root -p
     | sys                |
     +--------------------+
     4 rows in set (0.007 sec)
-```
+    ```
 
 ```zsh
 ```
