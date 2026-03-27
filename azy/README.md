@@ -52,7 +52,7 @@ mysql -u root -p
     5 rows in set (0.001 sec)
    ```
 3. Use Databases
-```zsh
+```mysql
 USE mydb;
 ```
 ```zsh
