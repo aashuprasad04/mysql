@@ -18,7 +18,7 @@ mysql -u root -p
 <br><br>
 # Basic Commands
 1. ```mysql
-    SHOW DATABASES;
+   SHOW DATABASES;
    ```
    ```txt
     MariaDB [(none)]> show databases;
@@ -32,11 +32,8 @@ mysql -u root -p
     +--------------------+
     4 rows in set (0.007 sec)
     ```
-1. ```mysql
+2. ```mysql
     CREATE DATABASE mydb;
-   ```
-   ```mysql
-    
    ```
    ```txt
     MariaDB [(none)]> CREATE DATABASE mydb;
@@ -53,8 +50,7 @@ mysql -u root -p
     | sys                |
     +--------------------+
     5 rows in set (0.001 sec)
-
-    ```
+   ```
 
 ```zsh
 ```
