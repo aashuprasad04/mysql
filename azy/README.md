@@ -2,6 +2,7 @@
 sudo systemctl status mysql
 ```
 ```zsh
+sudo systemctl start mysql
 ```
 ```zsh
 ```
