@@ -20,7 +20,7 @@ mysql -u root -p
 1. ```mysql
    SHOW DATABASES;
    ```
-   ```txt
+   ```mysql
     MariaDB [(none)]> show databases;
     +--------------------+
     | Database           |
