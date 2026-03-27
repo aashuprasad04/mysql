@@ -55,6 +55,12 @@ mysql -u root -p
    ```mysql
    USE mydb;
    ```
+   ```mysql
+   MariaDB [(none)]> USE mydb;
+   Database changed
+   ```
+
+3.    
 ```zsh
 ```
 ```zsh
