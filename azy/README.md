@@ -32,6 +32,29 @@ mysql -u root -p
     +--------------------+
     4 rows in set (0.007 sec)
     ```
+1. ```mysql
+    CREATE DATABASE mydb;
+   ```
+   ```mysql
+    
+   ```
+   ```txt
+    MariaDB [(none)]> CREATE DATABASE mydb;
+    Query OK, 1 row affected (0.007 sec)
+    
+    MariaDB [(none)]> SHOW DATABASES;
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | mydb               |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    +--------------------+
+    5 rows in set (0.001 sec)
+
+    ```
 
 ```zsh
 ```
