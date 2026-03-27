@@ -17,11 +17,10 @@ mysql -u root -p
 ```
 <br><br>
 # Basic Commands
-1.
 ```mysql
 SHOW DATABASES;
 ```
-  -
+-
   ```txt
     MariaDB [(none)]> show databases;
     +--------------------+
