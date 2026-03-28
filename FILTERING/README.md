@@ -75,3 +75,8 @@ MariaDB [mydb1]> select * from students where age = 18;
     | 13 | Vikas |   21 |
     +----+-------+------+
     ```
+### 3. Like (search)
+- % : Any number of characters (0,1, or many)
+  - 'A%'
+  - '%a'
+  - '%a%'
