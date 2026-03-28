@@ -4,6 +4,7 @@
 - AND/OR
 - LIKE (search)
 - IN
+- BETWEEN
 
 <br><br><br><br>
 ```mysql
