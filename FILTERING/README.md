@@ -88,7 +88,6 @@ MariaDB [mydb1]> select * from students where age = 18;
         | 11 | Arjun |   24 |
         +----+-------+------+
         3 rows in set (0.001 sec)
-        
        ```
   - '%a'    : Ending with 'a'
   - '%a%'   : Containing 'a'
