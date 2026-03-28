@@ -145,4 +145,16 @@ MariaDB [mydb1]> select * from students where name like 'Aman';
     |  2 | Aman |   22 |
     +----+------+------+
     2 rows in set (0.001 sec)
-    ```     
+    ```
+- Combination both (% + _)
+  ```mysql
+    MariaDB [mydb1]> select * from students where name like '_r%';
+    +----+-------+------+
+    | id | name  | age  |
+    +----+-------+------+
+    |  7 | Priya |   21 |
+    |  8 | Priya |   21 |
+    | 11 | Arjun |   24 |
+    +----+-------+------+
+    3 rows in set (0.001 sec)
+  ```
