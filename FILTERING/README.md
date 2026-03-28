@@ -43,7 +43,14 @@ MariaDB [mydb1]> select * from students where age = 18;
 2 rows in set (0.001 sec)
 ```
 ### 2. AND / OR
+- AND
 ```mysql
+MariaDB [mydb1]> select * from students where name = 'Aman' and age > 20;
++----+------+------+
+| id | name | age  |
++----+------+------+
+|  2 | Aman |   22 |
++----+------+------+
 
 ```
 
