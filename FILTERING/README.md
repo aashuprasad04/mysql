@@ -45,6 +45,9 @@ MariaDB [mydb1]> select * from students where age = 18;
 ### 2. AND / OR
 - AND
 ```mysql
+SELECT * FROM TableName WHERE CONDITION-1 AND CONDITION-2;
+```
+```mysql
 MariaDB [mydb1]> select * from students where name = 'Aman' and age > 20;
 +----+------+------+
 | id | name | age  |
