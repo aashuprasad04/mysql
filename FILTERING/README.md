@@ -187,3 +187,28 @@ MariaDB [mydb1]> select * from students where name in ('Aman', 'Priya', 'Shiv');
 4 rows in set (0.006 sec)
 
 ```
+### 5. BETWEEN
+```mysql
+SELECT * FROM tableName WHERE columnName BETWEEN CONDITION-1 AND CONDITION-2;
+```
+```mysql
+MariaDB [mydb1]> select * from students where age between 18 and 22;
++----+-------+------+
+| id | name  | age  |
++----+-------+------+
+|  1 | Aman  |   20 |
+|  2 | Aman  |   22 |
+|  3 | Rohit |   22 |
+|  4 | Rohit |   22 |
+|  5 | Sneha |   19 |
+|  6 | Sneha |   19 |
+|  7 | Priya |   21 |
+|  8 | Priya |   21 |
+| 10 | Neha  |   20 |
+| 12 | Pooja |   18 |
+| 13 | Vikas |   21 |
+| 14 | Riya  |   19 |
++----+-------+------+
+12 rows in set (0.001 sec)
+
+```
