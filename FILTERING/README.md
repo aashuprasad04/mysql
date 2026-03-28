@@ -44,16 +44,34 @@ MariaDB [mydb1]> select * from students where age = 18;
 ```
 ### 2. AND / OR
 - AND
-```mysql
-SELECT * FROM TableName WHERE CONDITION-1 AND CONDITION-2;
-```
-```mysql
-MariaDB [mydb1]> select * from students where name = 'Aman' and age > 20;
-+----+------+------+
-| id | name | age  |
-+----+------+------+
-|  2 | Aman |   22 |
-+----+------+------+
-
-```
-
+    ```mysql
+    SELECT * FROM TableName WHERE CONDITION-1 AND CONDITION-2;
+    ```
+    ```mysql
+    MariaDB [mydb1]> select * from students where name = 'Aman' and age > 20;
+    +----+------+------+
+    | id | name | age  |
+    +----+------+------+
+    |  2 | Aman |   22 |
+    +----+------+------+
+    ```
+- OR
+    ```mysql
+    SELECT * FROM TableName WHERE CONDITION-1 OR CONDITION-2;
+    ```
+    ```mysql
+    MariaDB [mydb1]> select * from students where name = 'Aman' or age > 20;
+    +----+-------+------+
+    | id | name  | age  |
+    +----+-------+------+
+    |  1 | Aman  |   20 |
+    |  2 | Aman  |   22 |
+    |  3 | Rohit |   22 |
+    |  4 | Rohit |   22 |
+    |  7 | Priya |   21 |
+    |  8 | Priya |   21 |
+    |  9 | Karan |   23 |
+    | 11 | Arjun |   24 |
+    | 13 | Vikas |   21 |
+    +----+-------+------+
+    ```
