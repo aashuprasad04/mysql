@@ -106,3 +106,22 @@ MariaDB [mydb1]> select * from students where age = 18;
         7 rows in set (0.001 sec)
        ```
   - '%a%'   : Containing 'a'
+       ```mysql
+        MariaDB [mydb1]> select*from students where name like '%a%';
+        +----+-------+------+
+        | id | name  | age  |
+        +----+-------+------+
+        |  1 | Aman  |   20 |
+        |  2 | Aman  |   22 |
+        |  5 | Sneha |   19 |
+        |  6 | Sneha |   19 |
+        |  7 | Priya |   21 |
+        |  8 | Priya |   21 |
+        |  9 | Karan |   23 |
+        | 10 | Neha  |   20 |
+        | 11 | Arjun |   24 |
+        | 12 | Pooja |   18 |
+        | 13 | Vikas |   21 |
+        | 14 | Riya  |   19 |
+        +----+-------+------+
+       ```
