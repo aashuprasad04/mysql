@@ -76,6 +76,16 @@ MariaDB [mydb1]> select * from students where age = 18;
     +----+-------+------+
     ```
 ### 3. Like (search)
+```mysql
+MariaDB [mydb1]> select * from students where name like 'Aman';
++----+------+------+
+| id | name | age  |
++----+------+------+
+|  1 | Aman |   20 |
+|  2 | Aman |   22 |
++----+------+------+
+
+```
 - %    : Any number of characters (0,1, or many)
   - 'A%'    : Starting with 'A'
        ```mysql
