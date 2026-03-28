@@ -77,6 +77,18 @@ MariaDB [mydb1]> select * from students where age = 18;
     ```
 ### 3. Like (search)
 - %    : Any number of characters (0,1, or many)
-  - 'A%'    : Starting with 'A' 
+  - 'A%'    : Starting with 'A'
+       ```mysql
+        ariaDB [mydb1]> select*from students where name like 'A%';
+        +----+-------+------+
+        | id | name  | age  |
+        +----+-------+------+
+        |  1 | Aman  |   20 |
+        |  2 | Aman  |   22 |
+        | 11 | Arjun |   24 |
+        +----+-------+------+
+        3 rows in set (0.001 sec)
+        
+       ```
   - '%a'    : Ending with 'a'
   - '%a%'   : Containing 'a'
