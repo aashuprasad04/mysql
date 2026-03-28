@@ -158,7 +158,7 @@ MariaDB [mydb1]> select * from students where name like 'Aman';
     +----+-------+------+
     3 rows in set (0.001 sec)
   ```
-### 4. IN
+### 4. IN : multiple search 
 ```mysql
 MariaDB [mydb1]> select * from students where age in (18,20,22,50);
 +----+-------+------+
@@ -172,5 +172,17 @@ MariaDB [mydb1]> select * from students where age in (18,20,22,50);
 | 12 | Pooja |   18 |
 +----+-------+------+
 6 rows in set (0.000 sec)
+```
+```mysql
+MariaDB [mydb1]> select * from students where name in ('Aman', 'Priya', 'Shiv');
++----+-------+------+
+| id | name  | age  |
++----+-------+------+
+|  1 | Aman  |   20 |
+|  2 | Aman  |   22 |
+|  7 | Priya |   21 |
+|  8 | Priya |   21 |
++----+-------+------+
+4 rows in set (0.006 sec)
 
 ```
