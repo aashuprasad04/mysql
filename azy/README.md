@@ -33,7 +33,7 @@ mysql -u root -p
     4 rows in set (0.007 sec)
     ```
 2. ```mysql
-    CREATE DATABASE mydb;
+    CREATE DATABASE dbName;
    ```
    ```mysql
     MariaDB [(none)]> CREATE DATABASE mydb;
@@ -53,7 +53,7 @@ mysql -u root -p
    ```
 3. Use Databases
    ```mysql
-   USE mydb;
+   USE dbName;
    ```
    ```mysql
    MariaDB [(none)]> USE mydb;
@@ -62,7 +62,7 @@ mysql -u root -p
 
 4. Create a table   
    ```mysql
-    CREATE TABLE Students(
+    CREATE TABLE tableName(
         -> id INT AUTO_INCREMENT PRIMARY KEY,
         -> name VARCHAR(100),
         -> age INT,
@@ -85,8 +85,120 @@ mysql -u root -p
     1 row in set (0.001 sec)
 
    ```
+4. Delete Table
+   - ```mysql
+     DROP TABLE tableName;
+     ```
+   - ```mysql
+     DROP TABLE IF EXISTS tableName;
+     ```
+   ```mysql
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    +----------------+
+    1 row in set (0.000 sec)
 
-3.    
+    MariaDB [mydb]> create table tb1(
+        -> id int);
+    Query OK, 0 rows affected (0.010 sec)
+
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    | tb1            |
+    +----------------+
+    2 rows in set (0.001 sec)
+
+    MariaDB [mydb]> drop table if exists tb;
+    Query OK, 0 rows affected, 1 warning (0.008 sec)
+
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    | tb1            |
+    +----------------+
+    2 rows in set (0.001 sec)
+
+    MariaDB [mydb]> drop table if exists tb1;
+    Query OK, 0 rows affected (0.009 sec)
+
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    +----------------+
+    1 row in set (0.001 sec)
+
+    ```   
+5. View table structure   
+   ```mysql
+   DESCRIBE tableName;
+   ```    
+   ```mysql
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    +----------------+
+    1 row in set (0.001 sec)
+    
+    MariaDB [mydb]> describe Students;
+    +-------+--------------+------+-----+---------+----------------+
+    | Field | Type         | Null | Key | Default | Extra          |
+    +-------+--------------+------+-----+---------+----------------+
+    | id    | int(11)      | NO   | PRI | NULL    | auto_increment |
+    | name  | varchar(100) | YES  |     | NULL    |                |
+    | age   | int(11)      | YES  |     | NULL    |                |
+    | email | varchar(100) | YES  |     | NULL    |                |
+    +-------+--------------+------+-----+---------+----------------+
+    4 rows in set (0.001 sec)
+   ```
+6. Insert data
+   ```mysq
+   INSERT INTO  (name, age, email)
+   VALUES ('John', 20, 'john@example.com');
+   ```
+   ```mysql
+    MariaDB [mydb]> insert into Students(name, age, email)
+        -> values('azy', 20, 'azy001@');
+    Query OK, 1 row affected (0.006 sec)
+    
+    MariaDB [mydb]> select*from Students;
+    +----+------+------+---------+
+    | id | name | age  | email   |
+    +----+------+------+---------+
+    |  1 | azy  |   20 | azy001@ |
+    +----+------+------+---------+
+    1 row in set (0.001 sec)
+ 
+   ```
+7. View data
+   ```mysql
+   SELECT * FROM tableName;
+   ```
+   ```mysql
+    MariaDB [mydb]> select*from Students;
+    +----+------+------+---------+
+    | id | name | age  | email   |
+    +----+------+------+---------+
+    |  1 | azy  |   20 | azy001@ |
+    +----+------+------+---------+
+   ```
+
+
+
+
+
+
 ```zsh
 
 ```
