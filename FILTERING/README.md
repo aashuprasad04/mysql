@@ -158,3 +158,19 @@ MariaDB [mydb1]> select * from students where name like 'Aman';
     +----+-------+------+
     3 rows in set (0.001 sec)
   ```
+### 4. IN
+```mysql
+MariaDB [mydb1]> select * from students where age in (18,20,22,50);
++----+-------+------+
+| id | name  | age  |
++----+-------+------+
+|  1 | Aman  |   20 |
+|  2 | Aman  |   22 |
+|  3 | Rohit |   22 |
+|  4 | Rohit |   22 |
+| 10 | Neha  |   20 |
+| 12 | Pooja |   18 |
++----+-------+------+
+6 rows in set (0.000 sec)
+
+```
