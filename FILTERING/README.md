@@ -135,3 +135,14 @@ MariaDB [mydb1]> select * from students where name like 'Aman';
         | 14 | Riya  |   19 |
         +----+-------+------+
        ```
+- '_' : Exactly one character
+  - ```mysql
+    MariaDB [mydb1]> select * from students where name like 'A__n';
+    +----+------+------+
+    | id | name | age  |
+    +----+------+------+
+    |  1 | Aman |   20 |
+    |  2 | Aman |   22 |
+    +----+------+------+
+    2 rows in set (0.001 sec)
+    ```     
