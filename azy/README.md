@@ -60,8 +60,34 @@ mysql -u root -p
    Database changed
    ```
 
+1. ```mysql
+    CREATE TABLE Students(
+        -> id INT AUTO_INCREMENT PRIMARY KEY,
+        -> name VARCHAR(100),
+        -> age INT,
+        -> email VARCHAR(100));
+   ```
+   ```mysql
+    MariaDB [mydb]> CREATE TABLE Students(
+        -> id INT AUTO_INCREMENT PRIMARY KEY,
+        -> name VARCHAR(100),
+        -> age INT,
+        -> email VARCHAR(100));
+    Query OK, 0 rows affected (0.014 sec)
+
+    MariaDB [mydb]> show tables;
+    +----------------+
+    | Tables_in_mydb |
+    +----------------+
+    | Students       |
+    +----------------+
+    1 row in set (0.001 sec)
+
+   ```
+
 3.    
 ```zsh
+
 ```
 ```zsh
 ```
