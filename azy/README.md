@@ -60,7 +60,8 @@ mysql -u root -p
    Database changed
    ```
 
-1. ```mysql
+4. Create a table   
+   ```mysql
     CREATE TABLE Students(
         -> id INT AUTO_INCREMENT PRIMARY KEY,
         -> name VARCHAR(100),
