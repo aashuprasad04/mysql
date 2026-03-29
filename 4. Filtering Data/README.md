@@ -33,3 +33,4 @@
 <br><br><br><br>
 
 ## 4.1 WHERE Clause
+- WHERE clause is used to select only those rows that satisfy a given condition. 
