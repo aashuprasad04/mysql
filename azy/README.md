@@ -13,7 +13,7 @@ sudo mysql
 ```
 2. Login Database using pass
 ```zsh
-mysql -u root -p
+mysql -u root -p   //1234
 ```
 <br><br>
 # Basic Commands
