@@ -194,6 +194,20 @@ mysql -u root -p   //1234
     +----+------+------+---------+
    ```
 
+8. View Port
+   ```mysql
+   SHOW VARIABLES LIKE 'port';
+   ```
+   ```mysql
+   MariaDB [college]> SHOW VARIABLES LIKE 'port';
+   +---------------+-------+
+   | Variable_name | Value |
+   +---------------+-------+
+   | port          | 3306  |
+   +---------------+-------+
+   1 row in set (0.008 sec)
+
+  ```
 
 
 
